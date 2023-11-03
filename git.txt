@@ -1,0 +1,49 @@
+git commands to add code into a repository
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git init
+Initialized empty Git repository in C:/Users/Dell/Desktop/Practice/Node.js/.git/
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git add .
+warning: in the working copy of 'mainfile/result.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git commit -m "first commit" 
+[master (root-commit) 86b7f66] first commit
+ 21 files changed, 211 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 1-intro.js
+ create mode 100644 10-fs-sync.js
+ create mode 100644 11-fs-async.js
+ create mode 100644 12-http.js
+ create mode 100644 2-globles.js
+ create mode 100644 3-module.js
+ create mode 100644 4-names.js
+ create mode 100644 5-utils.js
+ create mode 100644 6-alter.js
+ create mode 100644 7-mind.js
+ create mode 100644 8-osModule.js
+ create mode 100644 9-pathModule.js
+ create mode 100644 app.js
+ create mode 100644 mainfile/first.txt
+ create mode 100644 mainfile/result-async.txt
+ create mode 100644 mainfile/result.txt
+ create mode 100644 mainfile/second.txt
+ create mode 100644 mainfile/subfile/word.txt
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git remote add origin https://github.com/PavanJamagoudar/node.git
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git branch -M main
+
+PS C:\Users\Dell\Desktop\Practice\Node.js> git push -u origin main
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (25/25), 3.62 KiB | 740.00 KiB/s, done.
+Total 25 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PavanJamagoudar/node.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
